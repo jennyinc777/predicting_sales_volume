@@ -9,11 +9,11 @@ We are asking you to predict total sales for every product and store in the next
 
 ## Executive Summary
 
-The Predicting Sales Volume Kaggle Competition consists of using a 3 million row data set to predict monthly sales volume by shop and by item id.  There are many challenges that arise when we work with a dataset this big.
+The Predicting Sales Volume Kaggle Competition consists of using a 3 million row data set to predict monthly sales volume by shop and by item id.  There were many challenges that arose when working with a dataset this big.
 
-First, I thought that breaking down the dataset into logical chunks, perhaps by `shop_id`, can be a great idea.  Working with a small set of data gives me a general look into how to work with the data without having to worry about computational speed.  For example, when I was working with just shop \#42, I built a seasonal decomposition graph relatively quickly.
+First, I thought that breaking down the dataset into logical chunks, perhaps by `shop_id`, could be a realistic idea.  Working with a small set of data gave me a general look into how to work with the data without having to worry about computational speed.  For example, when I was working with just shop \#42, I built a seasonal decomposition graph relatively quickly.
 
-
+![seasonal_decompose.png](images/seasonal_decompose.png)
 
 I was also able to preprocess my data such as appending all items to all shops by month and pivot my dataset for a neural network.  Then knowing that I can do it for one shop, I then built out my code in a Python script and iterated through all the shops.
 
@@ -49,6 +49,8 @@ an [article](https://machinelearningmastery.com/suitability-long-short-term-memo
 ### Through competition's [website](https://www.kaggle.com/c/competitive-data-science-predict-future-sales/data)
 
 ## Data Dictionary
+
+Warning:  if these notebooks are ran with Kaggle's dataset, they will create folders and files into your directory.
 
 | Files | Description |
 |-|-|
